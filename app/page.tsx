@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Play, Maximize, Home, Mountain, Waves, Loader2 } from 'lucide-react';
+import { Play, Maximize, Home as HomeIcon, Mountain, Waves, Loader2 } from 'lucide-react';
 
 export default function Home() {
   const [showViewer, setShowViewer] = useState(false);
@@ -36,7 +36,7 @@ export default function Home() {
             onClick={handleGoHome}
             className="flex items-center gap-2 bg-white/95 backdrop-blur-sm hover:bg-white transition-all duration-200 text-gray-700 px-4 py-2 rounded-full shadow-lg hover:shadow-xl"
           >
-            <Home className="w-5 h-5" />
+            <HomeIcon className="w-5 h-5" />
             <span className="font-semibold">Kembali</span>
           </button>
           
